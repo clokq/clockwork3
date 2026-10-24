@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "clockwork",
+  "version": "${version}",
+  "name": "Clockwork",
+  "description": "A clockwork-themed client: ESP, freecam, xray, antivanish, custom sky.",
+  "environment": "client",
+  "icon": "assets/clockwork/logo.png",
+  "entrypoints": { "client": ["dev.clockwork.ClockworkClient"] },
+  "mixins": ["clockwork.mixins.json"],
+  "depends": { "fabricloader": ">=0.19.1", "minecraft": ">=26.2-", "java": ">=25", "fabric-api": "*" }
+}
