@@ -38,7 +38,7 @@ public class ClockworkClient implements ClientModInitializer {
 
         WorldRenderEvents.AFTER_ENTITIES.register(ctx -> {
             Minecraft mc = Minecraft.getInstance();
-            Vec3 cam = mc.gameRenderer.getMainCamera().position();
+            Vec3 cam = mc.gameRenderer.getMainCamera().getPosition();
             PoseStack ps = ctx.matrices();
             ps.pushPose();
             ps.translate(-cam.x, -cam.y, -cam.z);
